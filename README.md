@@ -17,6 +17,7 @@ This study demonstrates how a 2-qubit VQC can learn a nonlinear Boolean function
 (1) Quantum devices + circuit definition
 
 dev = qml.device("default.qubit", wires=2)
+
 @qml.qnode(dev)
 def xor_circuit(x, theta):
     if x[0] == 1:
@@ -28,6 +29,7 @@ def xor_circuit(x, theta):
     qml.CNOT(wires=[0, 1])
     qml.RY(theta[2], wires=0)
     qml.RY(theta[3], wires=1)
+    
     return qml.probs(wires=1)
 
 2-qubit VQC with basis encoding, one CNOT entangling layer, and four trainable RY rotations.
