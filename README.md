@@ -15,7 +15,7 @@ This study demonstrates how a 2-qubit VQC can learn a nonlinear Boolean function
 
 # Code structure
 (1) Quantum devices + circuit definition
-
+```python
 dev = qml.device("default.qubit", wires=2)
 
 @qml.qnode(dev)
