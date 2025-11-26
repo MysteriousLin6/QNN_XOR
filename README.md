@@ -24,13 +24,17 @@ def xor_circuit(x, theta):
         qml.PauliX(0)
     if x[1] == 1:
         qml.PauliX(1)
+
     qml.RY(theta[0], wires=0)
     qml.RY(theta[1], wires=1)
+
     qml.CNOT(wires=[0, 1])
+
     qml.RY(theta[2], wires=0)
     qml.RY(theta[3], wires=1)
-    
+
     return qml.probs(wires=1)
+
 
 2-qubit VQC with basis encoding, one CNOT entangling layer, and four trainable RY rotations.
 
