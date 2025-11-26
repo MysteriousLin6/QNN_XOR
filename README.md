@@ -2,7 +2,7 @@
 
 This repository contains the full implementation of a Variational Quantum Circuit (VQC)–based Quantum Neural Network (QNN) for learning the XOR function. This code is designed to serve the purpose of running on the real hardware.  
 
-# Project Overview
+## Project Overview
 
 This study demonstrates how a 2-qubit VQC can learn a nonlinear Boolean function (XOR) using:
 
@@ -32,6 +32,7 @@ def xor_circuit(x, theta):
     qml.RY(theta[3], wires=1)
 
     return qml.probs(wires=1)
+
 2-qubit VQC with basis encoding, one CNOT entangling layer, and four trainable RY rotations.
 
 (2) Truth Table of XOR
