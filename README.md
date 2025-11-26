@@ -34,7 +34,7 @@ def xor_circuit(x, theta):
     qml.RY(theta[3], wires=1)
 
     return qml.probs(wires=1)
-
+```
 
 2-qubit VQC with basis encoding, one CNOT entangling layer, and four trainable RY rotations.
 
