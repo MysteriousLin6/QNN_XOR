@@ -94,6 +94,7 @@ for x, y in zip(X, Y):
 ```
 Print the final trained parameters θ (in radians and degrees). 
 Output the predicted probabilities for the four inputs.
+
 (7) Convergent Curve
 ```python
 plt.figure(figsize=(6,4))
